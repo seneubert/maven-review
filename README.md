@@ -39,10 +39,26 @@ In our view a data analysis consists of the following artefacts
 
 The actual work delivered as the outcome of a typical analysis project are the code, the note and the paper. While the note and the paper are crucial documentations, the code is the actual tool to perform the study. As such it in itselve often represents a substantial investemnt of time and effort. Furthermore the code contains the most precise (but not most readable) documentation of what has actually been done. It should be reviewed on equal footing with the ANA note and the paper. Given the nature of code the focus of such a review will be different than a paper-review.
 
-The basic necessity to enable code review is that the complete analysis code is made available to the collaboration. This is also the only requirment that should be formalised in the review process.
+The basic necessity to enable code review is that **the complete analysis code is made available to the collaboration**. This is also the only requirment that should be formalised in the review process. Hosting the code on a repository sevice such as http://gitlab.cern.ch will be the most practical solution.
+
+The maven reviewer checks that the code is made available, is complete and documented well enough such that the analysis can (at least in principle) be rerun by any member of the collaboration.
+
+This last statement has some implications on how analyses are implemented. All of these implications are desired and encouraged by the design of this review process. 
+
+1. The analysis code has to be complete and automatic. The complete recipe, including all the systematic checks has to be made available. It will be convenient to write down this recipe in machine-executable form. This implies that all plots and numbers have to be generated in a scripted manner.
+2. The code has to be documented well enough that a skilled person can install and run it. Ideally with the help of a self-executing analysis recipe.
+3. All dependencies of the code are well documented. It is known that some of the programs in use are highly specialised and might require special hardware (such as a GPU cluster) to run in a finite time. In that case the dependencies have to be explained well enough that a reproduction is in principle possible. This might require giving the maven reviewer access to specialised computing hardware.
+4. It will be convenient, but not necessary, to make intermediate results (ntuples, results of expensive fits,...) available and to finely subdivide the analysis workflow such that a user can rerun only those parts which interest them.
+
+The analysis code repsoitory should be made available as soon as the project starts. Ideally the maven reviewer can run the current state of the analysis for himself as a preparation for the regular (biweekly) meetings with the analysis team.
+ 
+The complete working group is invited to contribute improvements to the analysis code. It is the decision of the analysis team wether to accept these contributions. A well tested workflow for this can be found [here](https://gitlab.cern.ch/help/workflow/forking_workflow.md).
+
+Requests for improvements to the code can be put onto the analysis backlog. But the analysis should only be delayed by this if either a bug causes wrong results or if the public code is in an incomplete state that does not allow it to be reused.
 
 
 
-[1] : the term `maven` comes from Hebrew, loosely translated to "one who understands"
+
+[1] : the term `maven` comes from Hebrew, loosely translated to "one who understands". There is no particular significance attached to the expression. You can substitute it with "mentor", "senpai", or just "working group reviewer"
 
 
