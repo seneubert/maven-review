@@ -15,25 +15,25 @@ The proposal presented here adresses all of these issues while preserving the es
 To attack the problems stated above we propose to adopt the following tools as part of the review process:
 
 ### Maven reviewers
-On the working group level, **as soon as an analysis is proposed**, a working group reviewer is assigned. They should be experienced in the respective kind of analysis and take the role of a [maven reviewer] [1]. A maven reviewer accompanies and counsels the analysts during the whole analysis. His first responsibility is to help the analysis team achieve the highest possible physics goals in the limitations of the available resources. His second responsibility is to make sure that the analysis is carried out according to adequat technical standards by making detailed feedback available as early as possible. The main tools that helps him achieve this are the analysis backlog and the code review discussed below.
-A maven reviewer does not engage in the day-to-day business of implementing the analyis but is available for questions and clarifications. He meets regularly (biweekly) with the analysis team, outside of the working group meetings, to discuss the progress of the analysis.
+On the working group level, **as soon as an analysis is proposed**, a working group reviewer is assigned. They should be experienced in the respective kind of analysis and take the role of a [maven reviewer] [1]. A maven reviewer accompanies and counsels the analysts during the whole analysis. Their first responsibility is to help the analysis team achieve the highest possible physics goals in the limitations of the available resources. Their second responsibility is to make sure that the analysis is carried out according to adequat technical standards by making detailed feedback available as early as possible. The main tools that helps them achieve this are the analysis backlog and the code review discussed below.
+A maven reviewer does not engage in the day-to-day business of implementing the analyis but is available for questions and clarifications. They meet regularly (biweekly) with the analysis team, outside of the working group meetings, to discuss the progress of the analysis.
 The maven reviewer clears an analysis for working group approval once all "must have" items on the analysis backlog are completed.
 
 Due to the intense involvement such an interpretation of the role of working group reviewer is in conflict with the requirement to have the analysis checked by a independent minds. However, this check is already covered by the collaboration reviewers. 
 
 ### Analysis backlog
-A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team and the working group. It is maintained by the maven reviewer. There are a few rules that have been proven to be useful when working with such a backlog:
+A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team and the working group. It is maintained by the maven reviewer. There are a few rules that have proven to be useful when working with such a backlog:
 
 * Items on the backlog should be described as clearly and as specifically as possible. Larger items may be needed to be broken down into several chunks.
 * Only the analysts themselves choose what they want to pick from the backlog to work on next.
-* The maven reviewer is responsible to always have a clear order of priority of all the items in the list. Only he can remove items from the list or demote them to lower priorities. He assists the analysis team in the decision what to spend their time on. 
+* The maven reviewer is responsible to always have a clear order of priority of all the items in the list. Only they can remove items from the list or demote them to lower priorities. They assist the analysis team in the decision what to spend their time on. 
 * Every working group member (in the later stages every member of the collaboration) can add items to the list. The maven reviewer has the last word on assigning priorities.
 * The maven reviewer has the last word on when they consider an item done. In that case the item is clearly marked as done.
 
 ### Analysis Triage
 With an analysis backlog in place and properly maintained it will become much more transparent what is still needed to bring an analysis to a state where it can be released. The priorisation of items on the ToDo list is crucial because it allows a shift of focus from the question "How can we complete everything requested in time?" to the question: "Which items are the most important to get right? Which of those do we have completed when the deadline hits?". 
 
-Analysis, like any project, are never really finished. At some point the reviewers have to take the decision when the analyses team should stop. We argue that it is better to make this decision transparent in the form of the analysis backlog. This includes stating clearly which items will not be completed for the release (because they are not worth it). On the other hand this kind of transparency should make it also more acceptable to delay a release to the next opportunity if the backlog is not completed yet. 
+Analyses, like any project, are never really finished. At some point the reviewers have to take the decision when the analysis team should stop. We argue that it is better to make this decision transparent in the form of the analysis backlog. This includes stating clearly which items will not be completed for the release (because they are not worth it). On the other hand this kind of transparency should make it also more acceptable to delay a release to the next opportunity if the backlog is not completed yet. 
 
 The prioritised backlog provides the basis for this decision making process, which happens in discussion between the reviewers and the analysis team. 
 
@@ -58,7 +58,7 @@ This last statement has some implications on how analyses are implemented. All o
 3. All dependencies of the code are well documented. It is known that some of the programs in use are highly specialised and might require special hardware (such as a GPU cluster) to run in a finite time. In that case the dependencies have to be explained well enough that a reproduction is in principle possible. This might require giving the maven reviewer access to specialised computing hardware.
 4. It will be convenient, but not necessary, to make intermediate results (ntuples, results of expensive fits,...) available and to finely subdivide the analysis workflow such that a user can rerun only those parts which interest them.
 
-The analysis code repsoitory should be made available as soon as the project starts. Ideally the maven reviewer can run the current state of the analysis for himself as a preparation for the regular (biweekly) meetings with the analysis team.
+The analysis code repsoitory should be made available as soon as the project starts. Ideally the maven reviewer can run the current state of the analysis for themself as a preparation for the regular (biweekly) meetings with the analysis team.
  
 The complete working group is invited to contribute improvements to the analysis code. It is the decision of the analysis team wether to accept these contributions. A well tested workflow for this can be found [here](https://gitlab.cern.ch/help/workflow/forking_workflow.md).
 
