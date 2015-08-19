@@ -54,8 +54,10 @@ The analysis code repsoitory should be made available as soon as the project sta
  
 The complete working group is invited to contribute improvements to the analysis code. It is the decision of the analysis team wether to accept these contributions. A well tested workflow for this can be found [here](https://gitlab.cern.ch/help/workflow/forking_workflow.md).
 
-Requests for improvements to the code can be put onto the analysis backlog. But the analysis should only be delayed by this if either a bug causes wrong results or if the public code is in an incomplete state that does not allow it to be reused.
+Requests for improvements to the code can be put onto the analysis backlog. But the analysis should only be delayed by this if either a bug causes wrong results or if the public code is in an incomplete state that does not allow it to be reused. It is appreciated that analysis code represents very personal and valuable contributions to the collaborative effort. As such the reviewing of the code has to adhere to the same high standards of fairness and good conduct than any other interaction in the collaboration. The balance between valueing the individual and the necessity for a common language understood by all is particularly delicate when it comes to code. Dogmatism has no place in this. We thus propose to refrain from the implementation of formal coding standards.
 
+
+### Analysis triage
 
 
 
