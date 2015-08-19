@@ -22,7 +22,7 @@ The maven reviewer clears an analysis for working group approval once all "must 
 Due to the intense involvement such an interpretation of the role of working group reviewer is in conflict with the requirement to have the analysis checked by a independent minds. However, this check is already covered by the collaboration reviewers. 
 
 ### Analysis backlog
-A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team and the working group. There are a few rules that have been proven to be useful when working with such a backlog:
+A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team and the working group. It is maintained by the maven reviewer. There are a few rules that have been proven to be useful when working with such a backlog:
 
 * Items on the backlog should be described as clearly and as specifically as possible. Larger items may be needed to be broken down into several chunks.
 * Only the analysts themselves choose what they want to pick from the backlog to work on next.
@@ -54,10 +54,9 @@ The analysis code repsoitory should be made available as soon as the project sta
  
 The complete working group is invited to contribute improvements to the analysis code. It is the decision of the analysis team wether to accept these contributions. A well tested workflow for this can be found [here](https://gitlab.cern.ch/help/workflow/forking_workflow.md).
 
-Requests for improvements to the code can be put onto the analysis backlog. But the analysis should only be delayed by this if either a bug causes wrong results or if the public code is in an incomplete state that does not allow it to be reused. It is appreciated that analysis code represents very personal and valuable contributions to the collaborative effort. As such the reviewing of the code has to adhere to the same high standards of fairness and good conduct than any other interaction in the collaboration. The balance between valueing the individual and the necessity for a common language understood by all is particularly delicate when it comes to code. Dogmatism has no place in this. We thus propose to refrain from the implementation of formal coding standards.
+Requests for improvements to the code can be put onto the analysis backlog. But the analysis should only be delayed by this if either a bug causes wrong results or if the public code is in an incomplete state that does not allow it to be reused. It is appreciated that analysis code represents very personal and valuable contributions to the collaborative effort. As such the reviewing of the code has to adhere to the same high standards of fairness and good conduct as any other interaction in the collaboration. The balance between valueing the individual and the necessity for a common language understood by all is particularly delicate when it comes to code. Dogmatism has no place in this. We thus strongly suggest to refrain from the enforcement of formal coding standards.
 
 
-### Analysis triage
 
 
 
