@@ -30,6 +30,14 @@ A backlog is nothing else than a ToDo list with prioritised items. The backlog s
 * Every working group member (in the later stages every member of the collaboration) can add items to the list. The maven reviewer has the last word on assigning priorities.
 * The maven reviewer has the last word on when they consider an item done. In that case the item is clearly marked as done.
 
+### Analysis Triage
+With an analysis backlog in place and properly maintained it will become much more transparent what is still needed to bring an analysis to a state where it can be released. The priorisation of items on the ToDo list is crucial because it allows a shift of focus from the question "How can we complete everything requested in time?" to the question: "Which items are the most important to get right? Which of those do we have completed when the deadline hits?". 
+
+Analysis, like any project, are never really finished. At some point the reviewers have to take the decision when the analyses team should stop. We argue that it is better to make this decision transparent in the form of the analysis backlog. This includes stating clearly which items will not be completed for the release (because they are not worth it). On the other hand this kind of transparency should make it also more acceptable to delay a release to the next opportunity if the backlog is not completed yet. 
+
+The prioritised backlog provides the basis for this decision making process, which happens in discussion between the reviewers and the analysis team. 
+
+
 ### Code review
 In our view a data analysis consists of the following artefacts
 * The input data as delivered by the experiment;
@@ -57,7 +65,18 @@ The complete working group is invited to contribute improvements to the analysis
 Requests for improvements to the code can be put onto the analysis backlog. But the analysis should only be delayed by this if either a bug causes wrong results or if the public code is in an incomplete state that does not allow it to be reused. It is appreciated that analysis code represents very personal and valuable contributions to the collaborative effort. As such the reviewing of the code has to adhere to the same high standards of fairness and good conduct as any other interaction in the collaboration. The balance between valueing the individual and the necessity for a common language understood by all is particularly delicate when it comes to code. Dogmatism has no place in this. We thus strongly suggest to refrain from the enforcement of formal coding standards.
 
 
+## Summary
+In order to improve 
 
+* when feedback is made available 
+* the reproducibilty and sustainability of the analysis and in particular the tools developed for it
+* the structure of feedback
+ 
+we propose to establish the following role and methods in the review process
+* each analysis is from day one accompanied by a maven reviewer
+* for each analysis there is a prioritized backlog, maintained by the maven reviewer
+* the complete analysis code of each analysis is made available and included in the working group review
+* the backlog is used for triage to decide if an analysis is mature enough to be released, including the transparent decision to leave some questions open
 
 
 [1] : the term `maven` comes from Hebrew, loosely translated to "one who understands". There is no particular significance attached to the expression. You can substitute it with "mentor", "senpai", or just "working group reviewer"
