@@ -30,7 +30,16 @@ A backlog is nothing else than a ToDo list with prioritised items. The backlog s
 * Every working group member (in the later stages every member of the collaboration) can add items to the list. The maven reviewer has the last word on assigning priorities.
 * The maven reviewer has the last word on when they consider an item done. In that case the item is clearly marked as done.
 
+### Code review
+In our view a data analysis consists of the following artefacts
+* The input data as delivered by the experiment;
+* The computer programs encoding the full analysis algorithm;
+* The analysis note that explains, documents and justifies the applied techniques;
+* The paper that summarises the analysis algorithm and presents the physics results obtained by applying it to the input data;
 
+The actual work delivered as the outcome of a typical analysis project are the code, the note and the paper. While the note and the paper are crucial documentations, the code is the actual tool to perform the study. As such it in itselve often represents a substantial investemnt of time and effort. Furthermore the code contains the most precise (but not most readable) documentation of what has actually been done. It should be reviewed on equal footing with the ANA note and the paper. Given the nature of code the focus of such a review will be different than a paper-review.
+
+The basic necessity to enable code review is that the complete analysis code is made available to the collaboration. This is also the only requirment that should be formalised in the review process.
 
 
 
