@@ -11,6 +11,13 @@ We try to adress three issues that are recurring problems within the current rev
 
 The proposal presented here adresses all of these issues while preserving the essential and valuable features of the present review process, in particular the requirement that an analysis is reviewed by independent minds. In fact most actions proposed -- with one exception -- do not touch on the content of the current publication procedure. Instead we try to flesh out some crucial details of the early stages of the review process in the working groups.
 
+## Two tiers
+Tier number one is the working group review. The goal of this part of the review is to ensure that the analysis is technically and from its physical content of the highest quality permitted by the limits of person power and computing resources. Feedback is brought to the analysis team at the earliest possible state and problems are highlighted in an early stage to avoid waste of work or sidetracks.
+During this part of the review it is also ensured that the analysis is reproducible and the tools developed are in a state that allows future projects to profit from the invested work.
+Tier number one is carried out as an accompanying review. Reviewers are involved in the analysis from day one. They don't wait until the proponents announce the analysis to be "ready" for review. This tier ends with the working group approval.
+
+Tier number two is the collaboration review. The goal is to provide an external, unbiased perspective on the analysis. The methodology is critically examined. The documentation is checked for completeness and clearness.
+
 ## A few simple tools
 To attack the problems stated above we propose to adopt the following tools as part of the review process:
 
@@ -19,7 +26,7 @@ On the working group level, **as soon as an analysis is proposed**, a working gr
 A maven reviewer does not engage in the day-to-day business of implementing the analyis but is available for questions and clarifications. They meet regularly (biweekly) with the analysis team, outside of the working group meetings, to discuss the progress of the analysis.
 The maven reviewer clears an analysis for working group approval once all "must have" items on the analysis backlog are completed.
 
-Due to the intense involvement such an interpretation of the role of working group reviewer is in conflict with the requirement to have the analysis checked by a independent minds. However, this check is already covered by the collaboration reviewers. 
+Due to the intense involvement such an interpretation of the role of working group reviewer is in conflict with the requirement to have the analysis checked by a independent minds. However, this check is already covered by the collaboration reviewers. After the first review tier the maven reviewer hands over his responsibility to the collaboration reviewers.
 
 ### Analysis backlog
 A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team and the working group. It is maintained by the maven reviewer. There are a few rules that have proven to be useful when working with such a backlog:
@@ -28,7 +35,9 @@ A backlog is nothing else than a ToDo list with prioritised items. The backlog s
 * Only the analysts themselves choose what they want to pick from the backlog to work on next.
 * The maven reviewer is responsible to always have a clear order of priority of all the items in the list. Only they can remove items from the list or demote them to lower priorities. They assist the analysis team in the decision what to spend their time on. 
 * Every working group member (in the later stages every member of the collaboration) can add items to the list. The maven reviewer has the last word on assigning priorities.
-* The maven reviewer has the last word on when they consider an item done. In that case the item is clearly marked as done.
+* The maven reviewer has the last word on when they consider an item done. In that case the item is clearly marked as done. 
+
+After the working group review the analysis backlog is handed over to the collaboration reviewers. It acts as a documentation which issues have already been discussed and which decisions have been made. Ideally it contains enough material to make transparent hoe a certain decision was achieved. The collaboration reviewers carry on using the backlog as the central tool to collect feedback. They are responsible that there always is a clear prioritisation of tasks.
 
 ### Analysis Triage
 With an analysis backlog in place and properly maintained it will become much more transparent what is still needed to bring an analysis to a state where it can be released. The priorisation of items on the ToDo list is crucial because it allows a shift of focus from the question "How can we complete everything requested in time?" to the question: "Which items are the most important to get right? Which of those do we have completed when the deadline hits?". 
