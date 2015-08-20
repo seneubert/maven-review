@@ -9,7 +9,7 @@ We try to adress three issues that are recurring problems within the current rev
 2. Currently the only basis for a review is the analysis note. The actual tools to obtain the results are largely absent from the discussion. This makes it very hard to ensure the reproducibility of the result and the sustainability and relevance of the work invested for future projects. 
 3. To make best use of the limited available resources, feedback has to be well structured. In most cases it is straight forward to request a large number of cross checks and systematic studies. It is less obvious how the available time is spent most usfully. There are two issues connected to this: the ability of the reviewers to ask the right questions, based on the material presented to them; and the priorisation of tasks, possibly requiring triage if the collaboration wants to hit a particular deadline.
 
-The proposal presented here adresses all of these issues while preserving the essential and valuable features of the present review process, in particular the requirement that an analysis is reviewed by independent minds. In fact most actions proposed -- with one exception -- do not touch on the content of the current publication procedure. Instead we try to flesh out some crucial details of the early stages of the review process.
+The proposal presented here adresses all of these issues while preserving the essential and valuable features of the present review process, in particular the requirement that an analysis is reviewed by independent minds.
 
 ### Balancing an unbiased review with the need for early feedback
 The main goal of the proposal is to bring feedback to the analysis at an early stage. To explain this a bit more in depth we note the following dynamics in the current review process.
@@ -25,12 +25,12 @@ The two tiers proposed here are organised on the working group level (tier 1) an
 
 Tier number one is the working group review. The goal of this part of the review is to ensure that the analysis is technically and from its physical content of the highest quality permitted by the limits of person power and computing resources. Feedback from relevant experts in the working group (and if needed beyond) is brought to the analysis team at the earliest possible state. The goal is to highlight problems in an early stage to avoid waste of work or sidetracks. A crucial responsibility of tier one is to ensure that the analysis is reproducible and the tools developed are in a state that allows future projects to profit from the invested work. 
 
-Tier number two is the collaboration review. The goal of this second tier is to provide an external, unbiased perspective on the analysis. The methodology is critically examined. The documentation is checked for completeness and clearness.
+Tier number two is the collaboration review. The responibility of this second tier is to provide an external, unbiased perspective on the analysis. The methodology is critically examined. The documentation is checked for completeness and clearness.
 
-
+The basic idea to use a tiered versus a staged review process is that the review can proceed in parallel to the analysis. Components of the analysis are made public as soon as they are implemented. The reviewers, first on the working group level, then on tier 2, give their feedback on the component immediately. They do not wait until a full analysis note is ready. To organise this process we propose a few simple tools.
 
 ## A few simple tools
-To attack the problems stated above we propose to adopt the following tools as part of the review process:
+To attack the problems stated above and to organise the triered review we propose to adopt the following tools as part of the review process:
 
 ### Maven reviewers
 On the working group level, **as soon as an analysis is proposed**, a working group reviewer is assigned. They should be experienced in the respective kind of analysis and take the role of a [maven reviewer] [1]. A maven reviewer accompanies and counsels the analysts during the whole analysis. Their first responsibility is to help the analysis team achieve the highest possible physics goals in the limitations of the available resources. Their second responsibility is to make sure that the analysis is carried out according to adequat technical standards by making detailed feedback available as early as possible. The main tools that helps them achieve this are the analysis backlog and the code review discussed below.
