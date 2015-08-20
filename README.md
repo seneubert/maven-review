@@ -35,28 +35,31 @@ To attack the problems stated above and to organise the triered review we propos
 ### Maven reviewers
 On the working group level, **as soon as an analysis is proposed**, a working group reviewer is assigned. They should be experienced in the respective kind of analysis and take the role of a [maven reviewer] [1]. A maven reviewer accompanies and counsels the analysts during the whole analysis. Their first responsibility is to help the analysis team achieve the highest possible physics goals in the limitations of the available resources. Their second responsibility is to make sure that the analysis is carried out according to adequat technical standards by making detailed feedback available as early as possible. The main tools that helps them achieve this are the analysis backlog and the code review discussed below.
 A maven reviewer does not engage in the day-to-day business of implementing the analyis but is available for questions and clarifications. They meet regularly (biweekly) with the analysis team, outside of the working group meetings, to discuss the progress of the analysis.
-The maven reviewer clears an analysis for working group approval once all "must have" items on the analysis backlog are completed.
 
-Due to the intense involvement such an interpretation of the role of working group reviewer is in conflict with the requirement to have the analysis checked by a independent minds. However, this check is already covered by the collaboration reviewers. After the first review tier the maven reviewer hands over his responsibility to the collaboration reviewers.
+Due to the intense involvement such an interpretation of the role of working group reviewer is in conflict with the requirement to have the analysis checked by independent minds. This is the role of the tier 2 reviewers.
+
+Tier 2 reviewers are assigned shortly after the first prototype of the analysis is under review by the maven. At this stage usually a first presentation about the analysis has been given in the working group. The maven, in discussion with the analysis team and the working group has already setup a substantial backlog (see below) that describes the analysis strategy.
+
+By making the backlog (and all other analysis artifacts) immediately available to the tier 2 reviewers, the maven provides the opportunity to collect early feedback on the analysis. More on the interaction between the maven reviewer (tier 1) and the tier 2 review can be found below.
 
 ### Analysis backlog
-A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team and the working group. It is maintained by the maven reviewer. There are a few rules that have proven to be useful when working with such a backlog:
+A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team, the working group and all reviewers. It is maintained by the maven reviewer. There are a few rules that have proven to be useful when working with such a backlog:
 
 * Items on the backlog should be described as clearly and as specifically as possible. Larger items may be needed to be broken down into several chunks.
 * Only the analysts themselves choose what they want to pick from the backlog to work on next.
-* The maven reviewer is responsible to always have a clear order of priority of all the items in the list. Only they can remove items from the list or demote them to lower priorities. They assist the analysis team in the decision what to spend their time on. 
+* The maven reviewer is responsible to always have a clear order of priority of all the items in the list. Only they can remove items from the list or demote them to lower priorities. They assist the analysis team in the decision what to spend their time on. Items from tier 2 reviewers can't be removed from the backlog.
 * Every working group member (in the later stages every member of the collaboration) can add items to the list. The maven reviewer has the last word on assigning priorities.
-* The maven reviewer has the last word on when they consider an item done. In that case the item is clearly marked as done. 
-
-After the working group review the analysis backlog is handed over to the collaboration reviewers. It acts as a documentation which issues have already been discussed and which decisions have been made. Ideally it contains enough material to make transparent hoe a certain decision was achieved. The collaboration reviewers carry on using the backlog as the central tool to collect feedback. They are responsible that there always is a clear prioritisation of tasks.
+* Tier 2 reviewers can add special tier-2-items to the backlog. Those can only be closed by a tier 2 reviewer.
+* Once the maven reviewer considers an item as done they mark it clearly in the backlog. It will be convenient to add a note detailing how the task was completed or how the issue was resolved. Collaboration reviewers can reopen issues on the backlog if they have concerns. Once the collaboration reviewers are happy with an issue it is marked as approved in the backlog.
+* An analysis is considered ready for approval when all open items are marked as approved by the tier 2 reviewers.
+* Items can be closed without being done if the decision is taken to not pursue them further (see analysis triage).
 
 ### Analysis Triage
 With an analysis backlog in place and properly maintained it will become much more transparent what is still needed to bring an analysis to a state where it can be released. The priorisation of items on the ToDo list is crucial because it allows a shift of focus from the question "How can we complete everything requested in time?" to the question: "Which items are the most important to get right? Which of those do we have completed when the deadline hits?". 
 
 Analyses, like any project, are never really finished. At some point the reviewers have to take the decision when the analysis team should stop. We argue that it is better to make this decision transparent in the form of the analysis backlog. This includes stating clearly which items will not be completed for the release (because they are not worth it). On the other hand this kind of transparency should make it also more acceptable to delay a release to the next opportunity if the backlog is not completed yet. 
 
-The prioritised backlog provides the basis for this decision making process, which happens in discussion between the reviewers and the analysis team. 
-
+The prioritised backlog provides the basis for this decision making process, which happens in discussion between the reviewers and the analysis team. In practice this will mean that open issues on the backlog are either approved or closed.
 
 ### Code review
 In our view a data analysis consists of the following artefacts
@@ -85,6 +88,7 @@ The complete working group is invited to contribute improvements to the analysis
 Requests for improvements to the code can be put onto the analysis backlog. But the analysis should only be delayed by this if either a bug causes wrong results or if the public code is in an incomplete state that does not allow it to be reused. It is appreciated that analysis code represents very personal and valuable contributions to the collaborative effort. As such the reviewing of the code has to adhere to the same high standards of fairness and good conduct as any other interaction in the collaboration. The balance between valueing the individual and the necessity for a common language understood by all is particularly delicate when it comes to code. Dogmatism has no place in this. We thus strongly suggest to refrain from the enforcement of formal coding standards.
 
 
+
 ## Summary
 In order to improve 
 
@@ -93,10 +97,14 @@ In order to improve
 * the structure of feedback
  
 we propose to establish the following role and methods in the review process
+* to switch from a two-stage to a two-tier review model
 * each analysis is from day one accompanied by a maven reviewer
 * for each analysis there is a prioritized backlog, maintained by the maven reviewer
 * the complete analysis code of each analysis is made available and included in the working group review
 * the backlog is used for triage to decide if an analysis is mature enough to be released, including the transparent decision to leave some questions open
+
+
+
 
 
 [1] : the term `maven` comes from Hebrew, loosely translated to "one who understands". There is no particular significance attached to the expression. You can substitute it with "mentor", "senpai", or just "working group reviewer"
