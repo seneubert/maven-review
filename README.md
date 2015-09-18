@@ -2,6 +2,25 @@
 
 Here we propose an updated methodology of a 2-tiered collaborative review process of scientific analyses for large collaborations, such as LHCb. The proposal is based on the [current model used by LHCb](http://lhcb.web.cern.ch/lhcb/lhcb_page/collaboration/organization/editorial_board/Publication_Procedure-Sept2011.pdf) and aims at improving in several points.
 
+## Executive Summary
+In order to improve 
+
+* the time when feedback is made available to an analysis team;
+* the structure of feedback;
+* the transparency of the decision making process when an analysis is ready for approval;
+* the reproducibilty and sustainability of the analysis and in particular the tools developed for it.
+
+we propose to establish the following roles and methods in the review process:
+
+* Switch from a two-stage to a two-tier review model.
+* Each analysis is from day one accompanied by a working group reviewer (here called 'maven reviewer').
+* For each analysis there is a prioritized backlog, maintained by the maven reviewer.
+* The complete analysis code of each analysis is made available and included in the working group review.
+* Collaboration reviewers are appointed as soon as possible and start to provide feedback on the backlog as well as on components that have been approved by the maven reviewer already.
+* The backlog is used for triage to decide when an analysis is mature enough to be released, including the transparent decision to leave some questions open.
+
+In the following the reasoning behind these new structures and how they will help improve the flow of feedback during an analysis project is explained in detail.
+
 ## The aim of the proposal
 We try to adress three issues that are recurring problems within the current review process:
 
@@ -89,20 +108,7 @@ Requests for improvements to the code can be put onto the analysis backlog. But 
 
 
 
-## Summary
-In order to improve 
 
-* when feedback is made available 
-* the reproducibilty and sustainability of the analysis and in particular the tools developed for it
-* the structure of feedback
- 
-we propose to establish the following role and methods in the review process
-* to switch from a two-stage to a two-tier review model
-* each analysis is from day one accompanied by a maven reviewer
-* for each analysis there is a prioritized backlog, maintained by the maven reviewer
-* the complete analysis code of each analysis is made available and included in the working group review
-* Collaboration reviewers are appointed as soon as possible and start to provide feedback on the backlog as well as on components that have been approved by the maven reviewer already
-* the backlog is used for triage to decide when an analysis is mature enough to be released, including the transparent decision to leave some questions open.
 
 
 
