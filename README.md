@@ -13,15 +13,15 @@ In order to improve
 we propose to establish the following roles and methods in the review process:
 
 * Switch from a two-stage to a two-tier review model.
-* Each analysis is from day one accompanied by a working group reviewer (here called 'maven reviewer').
-* For each analysis there is a prioritized backlog, maintained by the maven reviewer.
-* The complete analysis code of each analysis is made available and included in the working group review.
-* Collaboration reviewers are appointed as soon as possible and start to provide feedback on the backlog as well as on components that have been approved by the maven reviewer already.
-* The backlog is used for triage to decide when an analysis is mature enough to be released, including the transparent decision to leave some questions open.
+* Tier 1: Each analysis is from day one accompanied by a working group reviewer, here called **'maven reviewer'**.
+* For each analysis there is a prioritized **backlog**, maintained by the maven reviewer.
+* The complete analysis code of each analysis is made available and included in the deliverables of the analysis as **reviewed code**.
+* Tier 2: Collaboration reviewers are appointed as soon as possible and start to provide feedback on the backlog as well as on components that have been approved by the maven reviewer already.
+* The backlog is used for **triage** to decide when an analysis is mature enough to be released, including the transparent decision to leave some questions open.
 
 In the following the reasoning behind these new structures and how they will help improve the flow of feedback during an analysis project is explained in detail.
 
-## The aim of the proposal
+## The Aim of the Proposal
 We try to adress three issues that are recurring problems within the current review process:
 
 1. Feedback on the strategy and technique of the analysis has to be made available to the analysts as early as possible. Few things are as wasteful and frustrating as when someone works for quite some time on a project but gets feedback that requires substantial changes only once the analysis is finished and thought to be ready to be published. 
@@ -39,7 +39,7 @@ The first response is to have a rather loose working group review and try to get
 
 To resolve the issue it is important to understand that the conflict is most probably not a disagreement of what is to be considered a "reasonable concern". Conflicts and waste of time results when these concerns are discovered too late in the process. 
 
-## Two tiers
+## Two Tiers
 The two tiers proposed here are organised on the working group level (tier 1) and on the collaboration level (tier  2). However, contrary to the current model they are not stricitly staged in time, as will be discussed below.
 
 Tier number one is the working group review. The goal of this part of the review is to ensure that the analysis is technically and from its physical content of the highest quality permitted by the limits of person power and computing resources. Feedback from relevant experts in the working group (and if needed beyond) is brought to the analysis team at the earliest possible state. The goal is to highlight problems in an early stage to avoid waste of work or sidetracks. A crucial responsibility of tier one is to ensure that the analysis is reproducible and the tools developed are in a state that allows future projects to profit from the invested work. 
@@ -48,10 +48,10 @@ Tier number two is the collaboration review. The responibility of this second ti
 
 The basic idea to use a tiered versus a staged review process is that the review can proceed in parallel to the analysis. Components of the analysis are made public as soon as they are implemented. The reviewers, first on the working group level, then on tier 2, give their feedback on the component immediately. They do not wait until a full analysis note is ready. To organise this process we propose a few simple tools.
 
-## A few simple tools
+## A Few Simple Tools
 To attack the problems stated above and to organise the triered review we propose to adopt the following tools as part of the review process:
 
-### Maven reviewers
+### Maven Reviewers
 On the working group level, **as soon as an analysis is proposed**, a working group reviewer is assigned. They should be experienced in the respective kind of analysis and take the role of a 'maven reviewer' [1]. A maven reviewer accompanies and counsels the analysts during the whole analysis. Their first responsibility is to help the analysis team achieve the highest possible physics goals in the limitations of the available resources. Their second responsibility is to make sure that the analysis is carried out according to adequat technical standards by making detailed feedback available as early as possible. The main tools that helps them achieve this are the **analysis backlog** and the **code review** discussed below.
 A maven reviewer does not engage in the day-to-day business of implementing the analyis but is available for questions and clarifications. They meet regularly (biweekly) with the analysis team, outside of the working group meetings, to discuss the progress of the analysis.
 
@@ -61,7 +61,7 @@ Tier 2 reviewers are assigned shortly after the first prototype of the analysis 
 
 By making the backlog (and all other analysis artifacts) immediately available to the tier 2 reviewers, the maven provides the opportunity to collect early feedback on the analysis. More on the interaction between the maven reviewer (tier 1) and the tier 2 review can be found below.
 
-### Analysis backlog
+### Analysis Backlog
 A backlog is nothing else than a ToDo list with prioritised items. The backlog should be easily accessible to the analysis team, the working group and all reviewers. It is maintained by the maven reviewer. There are a few rules that have proven to be useful when working with such a backlog:
 
 * Items on the backlog should be described as clearly and as specifically as possible. Larger items may be needed to be broken down into several chunks.
@@ -80,7 +80,7 @@ Analyses, like any project, are never really finished. At some point the reviewe
 
 The prioritised backlog provides the basis for this decision making process, which happens in discussion between the reviewers and the analysis team. In practice this will mean that open issues on the backlog are either approved or closed.
 
-### Code review
+### Code Review
 In our view a data analysis consists of the following artefacts
 * The input data as delivered by the experiment;
 * The computer programs encoding the full analysis algorithm;
