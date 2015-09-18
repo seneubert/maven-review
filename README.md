@@ -8,7 +8,7 @@ In order to improve
 * the time when feedback is made available to an analysis team;
 * the structure of feedback;
 * the transparency of the decision making process when an analysis is ready for approval;
-* the reproducibilty and sustainability of the analysis and in particular the tools developed for it.
+* the reproducibilty and sustainability of the analysis and in particular the tools developed for it;
 
 we propose to establish the following roles and methods in the review process:
 
@@ -52,7 +52,7 @@ The basic idea to use a tiered versus a staged review process is that the review
 To attack the problems stated above and to organise the triered review we propose to adopt the following tools as part of the review process:
 
 ### Maven reviewers
-On the working group level, **as soon as an analysis is proposed**, a working group reviewer is assigned. They should be experienced in the respective kind of analysis and take the role of a [maven reviewer] [1]. A maven reviewer accompanies and counsels the analysts during the whole analysis. Their first responsibility is to help the analysis team achieve the highest possible physics goals in the limitations of the available resources. Their second responsibility is to make sure that the analysis is carried out according to adequat technical standards by making detailed feedback available as early as possible. The main tools that helps them achieve this are the **analysis backlog** and the **code review** discussed below.
+On the working group level, **as soon as an analysis is proposed**, a working group reviewer is assigned. They should be experienced in the respective kind of analysis and take the role of a 'maven reviewer' [1]. A maven reviewer accompanies and counsels the analysts during the whole analysis. Their first responsibility is to help the analysis team achieve the highest possible physics goals in the limitations of the available resources. Their second responsibility is to make sure that the analysis is carried out according to adequat technical standards by making detailed feedback available as early as possible. The main tools that helps them achieve this are the **analysis backlog** and the **code review** discussed below.
 A maven reviewer does not engage in the day-to-day business of implementing the analyis but is available for questions and clarifications. They meet regularly (biweekly) with the analysis team, outside of the working group meetings, to discuss the progress of the analysis.
 
 Due to the intense involvement such an interpretation of the role of working group reviewer is in conflict with the requirement to have the analysis checked by independent minds. This is the role of the tier 2 reviewers.
