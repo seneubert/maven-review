@@ -5,18 +5,18 @@ Here we collect the few hard "rules" that are put in place mainly to provide a s
 
 ## Public analysis shoppinglist (was backlog)
 * Each analysis team maintains a public shoppinglist list (using a common tool, that everybody in LHCb understands)
-* The shoppinglist should (*=must) contain
-** logical steps of the analysis strategy (*)
+* The shoppinglist should ($=must) contain
+** logical steps of the analysis strategy ($)
 ** discussions of ideas, techniques, implementation issues
 ** features people are working on
-** requests from reviewers (*)
+** requests from reviewers ($)
 ** comments from the working group
 * Items can be commented on, marked as finished and approved
 * Anybody is allowed to add items
 
 ## Public analysis code
 * The complete code of the analysis is made available to the collaboration in a version controll system
-* The working group (reviewer) is responsible for checking that the code is complete and rworking 
+* The working group (reviewer) is responsible for checking that the code is complete and working 
 
 ## Working group reviewer (was maven)
 * Is assigned to the analysis when it is presented in the working group
