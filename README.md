@@ -1,6 +1,6 @@
 # The Maven Review
 
-Here we propose an updated methodology of a 2-tiered collaborative review process of scientific analyses for large collaborations, such as LHCb. The proposal is based on the [current model used by LHCb](http://lhcb.web.cern.ch/lhcb/lhcb_page/collaboration/organization/editorial_board/Publication_Procedure-Sept2011.pdf) and aims at improving in several points.
+Here we propose an updated methodology of a 2-tiered collaborative review process of scientific analyses for large collaborations, such as LHCb. The proposal supplements the [current model used by LHCb](http://lhcb.web.cern.ch/lhcb/lhcb_page/collaboration/organization/editorial_board/Publication_Procedure-Sept2011.pdf) and aims at improving in several points.
 
 ## Executive Summary
 In order to improve 
@@ -18,6 +18,9 @@ we propose to establish the following roles and methods in the review process:
 * The complete analysis code of each analysis is made available and included in the deliverables of the analysis as **reviewed code**.
 * Tier 2: Collaboration reviewers are appointed as soon as possible and start to provide feedback on the backlog as well as on components that have been approved by the maven reviewer already.
 * The backlog is used for **triage** to decide when an analysis is mature enough to be released, including the transparent decision to leave some questions open.
+
+A list of concrete measures to implement this is summarised in our [rules of the game](rules_ofthe_game.md).
+
 
 In the following the reasoning behind these new structures and how they will help improve the flow of feedback during an analysis project is explained in detail.
 
