@@ -1,4 +1,4 @@
-The maven review is a process concept. The [main description](README) explains a lot of the mental models on which the concept is founded.
+The maven review is a process concept. The [main description](README.md) explains a lot of the mental models on which the concept is founded.
 Here we collect the few hard "rules" that are put in place mainly to provide a structure that everybody can agree to.
 
 ## Public Analysis shoppinglist (was backlog)
