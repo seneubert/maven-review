@@ -1,6 +1,6 @@
-# The Maven Review
+# Proposal for an iterative review process
 
-Here we propose an updated methodology of a 2-tiered collaborative review process of scientific analyses for large collaborations, such as LHCb. The proposal supplements the [current model used by LHCb](http://lhcb.web.cern.ch/lhcb/lhcb_page/collaboration/organization/editorial_board/Publication_Procedure-Sept2011.pdf) and aims at improving in several points.
+Here we propose a methodology of a 2-tiered iterative review process of scientific analyses for large collaborations, such as LHCb. The proposal supplements the [current model used by LHCb](http://lhcb.web.cern.ch/lhcb/lhcb_page/collaboration/organization/editorial_board/Publication_Procedure-Sept2011.pdf) and aims at improving in several points.
 
 ## Executive Summary
 In order to improve 
@@ -12,15 +12,14 @@ In order to improve
 
 we propose to establish the following roles and methods in the review process:
 
-* Switch from a two-stage to a two-tier review model.
-* Tier 1: Each analysis is from day one accompanied by a working group reviewer, here called **'maven reviewer'**.
-* For each analysis there is a prioritized **backlog**, maintained by the maven reviewer.
-* The complete analysis code of each analysis is made available and included in the deliverables of the analysis as **reviewed code**.
-* Tier 2: Collaboration reviewers are appointed as soon as possible and start to provide feedback on the backlog as well as on components that have been approved by the maven reviewer already.
-* The backlog is used for **triage** to decide when an analysis is mature enough to be released, including the transparent decision to leave some questions open.
-
-A list of concrete measures to implement this is summarised in our [rules of the game](rules_ofthe_game.md).
-
+* Conduct a 2-tier, iterative review. The review process is broken down into short cycles, here called **'iterations'**. The analysis are reviewed as the work proceeds.
+* Tier 1: Each analysis is accompanied by a working group reviewer, here called **'tier-1 reviewer'**.
+* The tier-1 reviewer supports the analysis team by asking questions on the analysis log. They check that the analysis software is made available in a useable state.
+* For each analysis there is a public **analysis logbook**, maintained by the analysis team. It contains the analysis strategy broken down into steps and provides room to document the analysis progress and for feedback from the reviewers. 
+* During the working group approval a prototype of the analysis and the analysis plan, written down as items in the logbook, are approved.
+* The complete analysis code is made available to the collaboration and included in the deliverables of the analysis.
+* Tier 2: Collaboration reviewers are appointed after the working group approval and start to provide feedback on the logbook while the analysis team proceeds to implement the complete analysis.
+* The analysis log is used for **triage** to decide when an analysis is mature enough to be released, including the transparent decision how open questions are being handled.
 
 In the following the reasoning behind these new structures and how they will help improve the flow of feedback during an analysis project is explained in detail.
 
